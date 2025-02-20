@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Banker's Algorithm Game</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+    <nav>
+      <h2>
+        <span> CS307 - OPERATING SYSTEMS <br /> </span> PROJECT
+      </h2>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="leaderboard.html">LEADERBOARD</a></li>
+      </ul>
+    </nav>
+    <div class="about">
+        <h1>Tutorial</h1>
+        <h2>Why is Banker's algorithm used?</h2>
+        <p>
+          Bankers's algorith is used in process management in operation system and has a purpose
+          to help the operating system avoid the unsafe state caused by lack of resources. By itself,
+          it is a tool for the safest selection of processes where deadlocks may still happen, but it can be
+          used to consturct safety algorithms for prevention of deadlocks.
+        </p>
+        <h2>How to use the banker's algorithm</h2>
+        <p>Banker's algorithm has a set of inputs, which are then used to decide which processes to choose in which order.</p>
+        <p>The inputs are:</p>
+        <ul>
+            <li>Total resources - vector containing the amounts of each resource.</li>
+            <li>Max need - matrix of how much resources each process needs in total to finish</li>
+            <li>Allocated - matrix of how much of the total resources were allocated to the process</li>
+        </ul>
+        <p>Calculation:</p>
+        <ul>
+            <li>Current needed = Max need - allocated </li>
+            <li>Available = Total resources - sum of allocated resources</li>
+        </ul>
+        <p>Selection:</p>
+        <ol>
+            <li>Select a process that you can finish with avaliable resources</li>
+            <li>Perform the process and return its allocated resources to the available</li>
+            <li>Use those resources to finish another process that is pending</li>
+            <li>Repeat until all processes are completed or until deadlock (safety algorithm has a way to solve this)</li>
+        </ol>
+        <h2>Game rules:</h2>
+        <ol>
+            <li>Read the available resources and process information</li>
+            <li>Select a valid process that can be completed</li>
+            <li>Select more correct answers in a row to get more points</li>
+            <li>If you encounter a deadlock you get extra points</li>
+            <li>Complete all levels to see your final score</li>
+        </ol>
+    </div>
+    </body>
+</html>

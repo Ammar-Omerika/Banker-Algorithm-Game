@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banker's Algorithm Game</title>
+  <link rel="stylesheet" href="css/gameplay.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <h1>Banker's Algorithm Game</h1>
+    <div id="level"></div>
+    
+    <div id="total-resources">
+      <h2>Total Resources</h2>
+      <p>A: <span id="total-resource-a"></span></p>
+      <p>B: <span id="total-resource-b"></span></p>
+      <p>C: <span id="total-resource-c"></span></p>
+    </div>
+
+    <div id="available-resources">
+      <h2>Available Resources</h2>
+      <p>A: <span id="available-resource-a"></span></p>
+      <p>B: <span id="available-resource-b"></span></p>
+      <p>C: <span id="available-resource-c"></span></p>
+    </div>
+
+    <div id="processes">
+      <h2>Processes</h2>
+      <table id="process-table">
+        <thead>
+          <tr>
+            <th>Process Number</th>
+            <th>Max Need (A, B, C)</th>
+            <th>Allocated (A, B, C)</th>
+            <th>Current Need (A, B, C)</th>
+          </tr>
+        </thead>
+        <tbody id="process-list"></tbody>
+      </table>
+    </div>
+
+    <div id="game-status">
+      <h2>Score: <span id="score">0</span></h2>
+      <p id="message"></p>
+    </div>
+  </div>
+  <div id="next-level"></div>
+  <script src="js/gameMedium.js"></script>
+</body>
+</html>

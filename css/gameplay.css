@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color:white;
+  background-color: whitesmoke;
+}
+
+#game-container {
+  padding: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  color:black;
+}
+
+table th, table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+table tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+table tr:nth-child(odd) {
+  background-color: white;
+}
+
+#next-level button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(0, 110, 255);
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+}
+
+#next-level button:hover {
+  background-color: rgb(0, 204, 255);
+}
